@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shop_demo/components/bottom_nav_bar.dart';
 import 'package:shop_demo/pages/cart_screen.dart';
+import 'package:shop_demo/pages/mine_screen.dart';
 import 'package:shop_demo/pages/shop_screen.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -22,7 +23,7 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   // 3.定义一个页面列表
-  final List<Widget> _pages = [const ShopScreen(), const CartScreen()];
+  final List<Widget> _pages = [const ShopScreen(), const CartScreen(),const MineScreen()];
 
   @override
   Widget build(BuildContext context) {

@@ -19,6 +19,7 @@ class BottomNavBar extends StatelessWidget {
           tabs: const [
             GButton(icon: Icons.home, text: "首页"),
             GButton(icon: Icons.shopping_bag_rounded, text: "购物车"),
+            GButton(icon: Icons.network_cell, text: "我的"),
           ]),
     );
   }

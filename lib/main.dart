@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:shop_demo/pages/article_screen.dart';
 import 'package:shop_demo/pages/home_screen.dart';
 
 import 'package:shop_demo/pages/introduction_screen.dart';
+import 'package:shop_demo/pages/mine_screen.dart';
 import 'models/card.dart';
 
 void main() {
@@ -21,6 +23,8 @@ class MyApp extends StatelessWidget {
         home: const IntroductionScreen(),
         routes: {
           '/home': (context) => const HomeScreen(),
+          '/mine:': (context) => const MineScreen(),
+          '/article_list':(context) => const ArticleScreen()
         },
       ),
     );
